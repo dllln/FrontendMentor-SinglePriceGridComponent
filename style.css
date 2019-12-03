@@ -1,0 +1,140 @@
+/* Root styles */
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --light-Cyan: hsl(179, 47%, 52%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+
+* {
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main styles */
+
+body {
+    background-color: var(--Light-Gray);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 650px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 310px;
+        margin: 10px;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+h1.main_header {
+    color: var(--Cyan);
+    font-weight: 700;
+}
+
+h3.subheader {
+    color: var(--Bright_Yellow);
+}
+
+p.header_text {
+    color: var(--Grayish-Blue);
+    line-height: 1.75em;
+    width: 90%;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section_left {
+    background-color: var(--Cyan);
+    width: 50%;
+    padding: 30px;
+    color: #fff;
+}
+
+span.bold_text {
+    font-size: 2em;
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+p.light_gray {
+    color: var(--Light-Gray);
+}
+
+.section_left h5 {
+    font-weight: 400;
+}
+
+.button {
+    background: var(--Bright_Yellow);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 40px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section_right {
+    background-color: var(--light-Cyan);
+    width: 50%;
+    padding: 30px;
+    color: #fff;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    line-height: 1.5em;
+    color: var(--Light-Gray);
+}
+
+@media screen and (max-width: 600px) {
+
+    .section_left {
+        width: 100%;
+    }
+
+    .section_right {
+        width: 100%;
+    }
+
+}
+
+/* frontend mentor style */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
